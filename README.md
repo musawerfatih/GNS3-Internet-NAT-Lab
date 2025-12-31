@@ -7,6 +7,11 @@ This project demonstrates how to connect a virtualized GNS3 network topology to 
 * Inside Subnet: 10.10.10.0/24
 * Gateway IP: 192.168.134.2 (NAT Interface - In My Case, Check yours at VM Pro->Edit->Virtual Network Editor->VMnet8)
 
+## Requirements to Run
+* GNS3 Version 2.2+
+* Cisco C7200 IOS Image (c7200-advipservicesk9-mz.152-4.S5.image)
+* GNS3 VM
+
 ## Configuration
 ### 1. Router Interface Setup
 Assigning static IPs and defining NAT boundaries.
