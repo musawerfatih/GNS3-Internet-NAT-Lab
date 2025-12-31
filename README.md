@@ -1,15 +1,11 @@
-GNS3 Lab: Internet Connectivity via VMware NAT
-Overview
+#GNS3 Lab: Internet Connectivity via VMware NAT
 This project demonstrates how to connect a virtualized GNS3 network topology to the live internet using VMware Workstation Pro and the GNS3 VM. It covers manual static IP configuration, default routing, and Network Address Translation (PAT) on a Cisco router.
 
-Topology Details
-Edge Router: Cisco C7200 Series (R1)
-
-Outside Subnet: 192.168.134.0/24 (VMware VMnet8 NAT - In My Case)
-
-Inside Subnet: 10.10.10.0/24
-
-Gateway IP: 192.168.134.2 (NAT Interface - In My Case, Check yours at VM Pro->Edit->Virtual Network Editor->VMnet8)
+##Topology Details
+*Edge Router: Cisco C7200 Series (R1)
+*Outside Subnet: 192.168.134.0/24 (VMware VMnet8 NAT - In My Case)
+*Inside Subnet: 10.10.10.0/24
+*Gateway IP: 192.168.134.2 (NAT Interface - In My Case, Check yours at VM Pro->Edit->Virtual Network Editor->VMnet8)
 
 Configuration
 1. Router Interface Setup
