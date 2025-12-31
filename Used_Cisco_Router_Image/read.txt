@@ -1,2 +1,0 @@
-To use the topology please install this Cisco Router image: C7200 Cisco Router
-"c7200-advipservicesk9-mz.152-4.S5.image"
