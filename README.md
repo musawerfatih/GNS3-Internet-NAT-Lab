@@ -10,7 +10,7 @@ This project demonstrates how to connect a virtualized GNS3 network topology to 
 ## Requirements to Run
 * GNS3 Version 2.2+
 * Cisco C7200 IOS Image (c7200-advipservicesk9-mz.152-4.S5.image)
-* GNS3 VM
+* GNS3 VM Pro
 
 ## Configuration
 ### 1. Router Interface Setup
