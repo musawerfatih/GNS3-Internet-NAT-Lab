@@ -1,4 +1,4 @@
-# GNS3 Lab: Internet Connectivity via VMware NAT
+# GNS3 Lab: Internet Connectivity via VMware NAT - Topology Screenshot Available At The End.
 This project demonstrates how to connect a virtualized GNS3 network topology to the live internet using VMware Workstation Pro and the GNS3 VM. It covers manual static IP configuration, default routing, and Network Address Translation (PAT) on a Cisco router.
 
 ## Topology Details
@@ -32,7 +32,7 @@ Implementing a static default route and Port Address Translation (PAT).
 ip route 0.0.0.0 0.0.0.0 192.168.134.2
 
 ! ACL to permit internal LAN traffic
-access-list 1 permit 10.10.10.0 0.0.0.255
+access-list 1 permit any
 
 ! Dynamic NAT (Overload)
 ip nat inside source list 1 interface GigabitEthernet0/0 overload
@@ -60,6 +60,8 @@ show ip nat translations      # Monitor active NAT sessions
 show arp                     # Verify Layer 2 connectivity to NAT gateway
 ping google.com              # End-to-end connectivity test
 ```
+## Topology Screenshot
+<img width="561" height="653" alt="NAT Topology" src="https://github.com/user-attachments/assets/725d18ca-b63a-4022-b59e-26c1a764eb01" />
 
 
 
