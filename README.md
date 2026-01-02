@@ -2,14 +2,14 @@
 This project demonstrates how to connect a virtualized GNS3 network topology to the live internet using VMware Workstation Pro and the GNS3 VM. It covers manual static IP configuration, default routing, and Network Address Translation (PAT) on a Cisco router.
 
 ## Topology Details
-* Edge Router: Cisco C7200 Series (R1)
-* Outside Subnet: 192.168.134.0/24 (VMware VMnet8 NAT - In My Case)
-* Inside Subnet: 10.10.10.0/24
-* Gateway IP: 192.168.134.2 (NAT Interface - In My Case, Check yours at VM Pro->Edit->Virtual Network Editor->VMnet8)
+* **Edge Router:** Cisco C7200 Series (R1)
+* **Outside Subnet:** `192.168.134.0/24` (VMware VMnet8 NAT - In My Case)
+* **Inside Subnet:** `10.10.10.0/24`
+* **Gateway IP:** `192.168.134.2` (NAT Interface - In My Case, Check yours at VM Pro->Edit->Virtual Network Editor->VMnet8)
 
 ## Requirements to Run
 * GNS3 Version 2.2+
-* Cisco C7200 IOS Image (c7200-advipservicesk9-mz.152-4.S5.image)
+* Cisco C7200 IOS Image (`c7200-advipservicesk9-mz.152-4.S5.image`)
 * GNS3 VM Pro
 
 ## Configuration
@@ -43,7 +43,7 @@ access-list 1 permit any
 ip nat inside source list 1 interface GigabitEthernet0/0 overload
 ```
 ### 3. DNS Configuration
-Required for resolving external domain names if using GNS3 VPCS, otherwise not necassary in case of using firefor PC image e.g "linux-tinycore-linux-6.4-firefox-33.1.1-2 image.img"
+Required for resolving external domain names if using GNS3 VPCS, otherwise not necassary in case of using firefor PC image e.g "`linux-tinycore-linux-6.4-firefox-33.1.1-2 image.img`"
 
 ```
 ip domain-lookup
